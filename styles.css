@@ -1,0 +1,96 @@
+/* Tipografia e cores básicas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Layout com Flexbox */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  article {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  aside {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Estilo para data */
+  .date {
+    font-size: 0.9em;
+    color: gray;
+  }
+  
