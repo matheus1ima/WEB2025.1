@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sustentabilidade - Meu Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button class="btn-toggle-darkmode" aria-label="Alternar modo escuro">Modo Escuro</button>
+
+  <header class="site-header" role="banner">
+    <h1>Sustentabilidade no Cotidiano</h1>
+    <p>Promovendo um futuro mais verde e consciente.</p>
+  </header>
+
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#importancia">Importância</a>
+    <a href="#acoes">Ações Sustentáveis</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main class="content">
+    <aside class="sidebar" role="complementary" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre a Sustentabilidade</h2>
+      <h3>Imagem ilustrativa</h3>
+      <img src="arvoresustentavel.png" alt="Árvore sustentável" />
+      <p>
+        Sustentabilidade é o uso responsável dos recursos naturais, garantindo a preservação para as futuras gerações, equilibrando necessidades ambientais, econômicas e sociais.
+      </p>
+      <h3>Curiosidades</h3>
+      <img src="painelsolar.jpg" alt="Painel Solar" style="height: 60px;" />
+      <img src="reciclagem.jpg" alt="Reciclagem" style="height: 60px;" />
+      <img src="agricultura.jpg" alt="Agricultura Orgânica" style="height: 60px;" />
+    </aside>
+
+    <section class="main-content" role="main">
+      <article id="sobre">
+        <h2>O que é Sustentabilidade?</h2>
+        <p>
+          Sustentabilidade refere-se à capacidade de manter processos ecológicos, sociais e econômicos de forma equilibrada e duradoura. O conceito ganhou força após o relatório Brundtland (1987), que definiu desenvolvimento sustentável como “o desenvolvimento que satisfaz as necessidades do presente sem comprometer a capacidade das futuras gerações”.
+        </p>
+        <p>
+          Isso implica práticas conscientes em todos os setores, desde o consumo de energia até a gestão de resíduos e preservação da biodiversidade.
+        </p>
+      </article>
+
+      <article id="importancia">
+        <h2>Por que é importante?</h2>
+        <p>
+          A sustentabilidade é essencial para combater os efeitos das mudanças climáticas, a degradação ambiental e o esgotamento dos recursos naturais. Além disso, promove justiça social, melhora a qualidade de vida e incentiva a economia circular.
+        </p>
+        <p>
+          Adotar um estilo de vida sustentável ajuda a preservar ecossistemas, reduzir a poluição e garantir a disponibilidade de recursos para as próximas gerações.
+        </p>
+      </article>
+
+      <article id="acoes">
+        <h2>Ações que podemos fazer</h2>
+        <p>Existem diversas maneiras de contribuir, entre elas:</p>
+        <ul>
+          <li>Reduzir o consumo de plástico e reutilizar materiais;</li>
+          <li>Economizar água e energia;</li>
+          <li>Optar por transporte sustentável, como bicicletas ou transporte público;</li>
+          <li>Separar o lixo para reciclagem;</li>
+          <li>Consumir produtos orgânicos e locais;</li>
+          <li>Plantar árvores e preservar áreas verdes;</li>
+          <li>Conscientizar outras pessoas sobre práticas sustentáveis.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const btnToggle = document.querySelector('.btn-toggle-darkmode');
+    btnToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if(document.body.classList.contains('dark-mode')) {
+        btnToggle.textContent = 'Modo Claro';
+      } else {
+        btnToggle.textContent = 'Modo Escuro';
+      }
+    });
+  </script>
+</body>
+</html>
+
